@@ -3,20 +3,6 @@
 
 Этот проект демонстрирует работу с Kafka, используя C# и библиотеку Confluent.Kafka. Он состоит из трех отдельных приложений: Producer, Pull Consumer и Push Consumer.
 
-## Структура проекта
-
-```
-.
-├── KafkaProducer
-├── KafkaPullConsumer
-├── KafkaPushConsumer
-├── README.md
-├── docker-compose.yaml
-└── kafka-fun.sln
-```
-
-## Приложения
-
 ### KafkaProducer
 
 Производитель сообщений для Kafka.
@@ -69,12 +55,3 @@
 
 
 http://localhost:8080 интерфейс для управления Kafka.
-
-
-```
-Создайте топик с 3 партициями и 2 репликами через консоль.
-kafka-topics --create --bootstrap-server localhost:9094 --replication-factor 2 --partitions 3 --topic my_first_topic
-
-проверки созданного топика:
-kafka-topics --describe --bootstrap-server localhost:9094 --topic my_first_topic
-```
